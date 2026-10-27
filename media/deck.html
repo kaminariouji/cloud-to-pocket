@@ -1,0 +1,92 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Cloud to Pocket</title>
+<style>
+  html,body{margin:0;height:100%;background:#0b0d10;color:#e8edf2;font-family:"Segoe UI",system-ui,sans-serif;overflow:hidden}
+  .scene{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:64px 80px;opacity:0;transition:opacity .5s ease}
+  .scene.on{opacity:1}
+  h1{font-size:58px;margin:0 0 18px;letter-spacing:-1px}
+  h2{font-size:34px;margin:0 0 26px;color:#9fb3c8;font-weight:500}
+  .kicker{font-size:20px;letter-spacing:3px;text-transform:uppercase;color:#5eead4;margin-bottom:18px}
+  .big{font-size:96px;font-weight:700;letter-spacing:-3px;line-height:1}
+  .row{display:flex;gap:56px;margin-top:18px}
+  .cell .lbl{font-size:17px;color:#8aa0b4;margin-bottom:6px}
+  .cell .val{font-size:40px;font-weight:600}
+  table{border-collapse:collapse;font-size:26px;margin-top:10px}
+  th,td{padding:12px 26px;text-align:left;border-bottom:1px solid #1e2733}
+  th{color:#8aa0b4;font-weight:500;font-size:18px;text-transform:uppercase;letter-spacing:1px}
+  .good{color:#5eead4}.bad{color:#fca5a5}.dim{color:#8aa0b4}
+  .note{font-size:20px;color:#8aa0b4;margin-top:26px}
+  ul{font-size:26px;line-height:1.7;margin:6px 0 0;padding-left:26px}
+  code{background:#141a21;padding:2px 8px;border-radius:6px;font-size:.9em}
+</style></head><body>
+
+<section class="scene" id="s1">
+  <div class="kicker">DoraHacks · Cloud to Pocket</div>
+  <h1>"Is this message a scam?"</h1>
+  <h2>One workload. Two places to run it. Every number measured.</h2>
+  <div class="note">40 messages · 20 scams in 9 families · 20 legitimate near-misses</div>
+</section>
+
+<section class="scene" id="s2">
+  <div class="kicker">Before · cloud assistant</div>
+  <h1>Paste the message. Upload the evidence.</h1>
+  <div class="row">
+    <div class="cell"><div class="lbl">uploaded per message</div><div class="val bad">384 B</div></div>
+    <div class="cell"><div class="lbl">median</div><div class="val">1,136 ms</div></div>
+    <div class="cell"><div class="lbl">p95</div><div class="val bad">13,845 ms</div></div>
+    <div class="cell"><div class="lbl">rate-limited</div><div class="val bad">15 / 40</div></div>
+  </div>
+  <div class="note">One message never got an answer at all. Offline, the answer is simply "no".</div>
+</section>
+
+<section class="scene" id="s3">
+  <div class="kicker">After · on device</div>
+  <h1>Same question, nothing leaves the process.</h1>
+  <div class="row">
+    <div class="cell"><div class="lbl">uploaded per message</div><div class="val good">0 B</div></div>
+    <div class="cell"><div class="lbl">median</div><div class="val good">0.009 ms</div></div>
+    <div class="cell"><div class="lbl">p95</div><div class="val good">0.69 ms</div></div>
+    <div class="cell"><div class="lbl">memory</div><div class="val">64 MB</div></div>
+  </div>
+  <div class="note">Deterministic rule engine, 126,000x faster at the median, and it answers with the cable pulled.</div>
+</section>
+
+<section class="scene" id="s4">
+  <div class="kicker">Quality · two sets</div>
+  <h1>What the migration costs</h1>
+  <table>
+    <tr><th>arm</th><th>set 1 (40)</th><th>set 2, held out (20)</th></tr>
+    <tr><td>cloud model</td><td>95.0%</td><td>90.0%</td></tr>
+    <tr><td>device, rules as shipped</td><td class="bad">82.5%</td><td class="bad">65.0%</td></tr>
+    <tr><td>device, rules patched</td><td class="good">95.0%</td><td class="good">85.0%</td></tr>
+  </table>
+  <div class="note">Five named rule gaps, fixed generically, then re-measured on messages never used to design them.</div>
+</section>
+
+<section class="scene" id="s5">
+  <div class="kicker">The obvious fix that fails</div>
+  <h1>Put the 1B model in the classifier seat</h1>
+  <div class="big bad">17.5%</div>
+  <ul>
+    <li>5 refusals: "I can't assist with fraudulent activity."</li>
+    <li>15 answers of "One."</li>
+    <li>11 legitimate messages called scams</li>
+  </ul>
+</section>
+
+<section class="scene" id="s6">
+  <div class="kicker">What ships</div>
+  <h1>95% · 85% held out · 0 bytes uploaded</h1>
+  <h2>The model explains the flags. It never decides.</h2>
+  <div class="note">github.com/kaminariouji/cloud-to-pocket · MIT · rule engine from Scam Shield Offline</div>
+</section>
+
+<script>
+  const ids = ['s1','s2','s3','s4','s5','s6']
+  const ms = [0, 6500, 13500, 21000, 29000, 37000]
+  ids.forEach((id, i) => setTimeout(() => {
+    document.querySelectorAll('.scene').forEach(e => e.classList.remove('on'))
+    document.getElementById(id).classList.add('on')
+  }, ms[i]))
+</script>
+</body></html>
