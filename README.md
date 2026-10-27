@@ -55,6 +55,16 @@ So the honest tradeoff is not "cloud accuracy, offline". It is:
 - the cloud gives up **availability and privacy**: in this run 15 of 40 requests were
   rate-limited, one never answered, and the worst answer took 22.8 seconds.
 
+
+## QVAC integration
+
+- **SDK:** `@qvac/sdk` **^0.22.0**, declared in `package.json`.
+- **Model:** `LLAMA_3_2_1B_INST_Q4_0`, the constant the SDK exports — Llama 3.2 1B Instruct, Q4_0. **773,025,824 bytes** on disk, downloaded once on first use and reused on every run after that.
+- **Where it runs:** `bench/run-device2.mjs`, the `device-model` arm. It imports `loadModel`, `completion`, `unloadModel` and the model constant, loads with `{ ctx_size: 2048, gpu_layers: 0, device: 'cpu' }`, and asks the model only about the messages the rule engine did not already call `high`.
+- **Setup:** `npm install` pulls the SDK, then `npm run bench:model`. The first run downloads the model; later runs reuse the cached file. `npm run bench:rules` needs no model and no network at all.
+- **Hardware:** CPU only, no GPU. Peak RSS is 92 MB with the model loaded; the model file is the only large artifact.
+- **Rules arm:** `bench/run-device.mjs` uses `vendor/rules.mjs`, the same rule engine as Scam Shield Offline, with no model and no network.
+
 ## Reproduce
 
 ```bash
