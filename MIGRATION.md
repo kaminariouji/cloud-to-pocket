@@ -41,7 +41,7 @@ that never got an answer: a person under pressure, on a bad connection, at 11pm.
 
 The rule engine is [`vendor/rules.mjs`](vendor/rules.mjs), taken unmodified from
 [Scam Shield Offline](https://github.com/kaminariouji/scam-shield-offline) (MIT). The
-patched variant is [`vendor/rules-patched-v2.mjs`](vendor/rules-patched-v2.mjs), a
+patched variant is [`vendor/rules-patched.mjs`](vendor/rules-patched-v2.mjs), a
 wrapper that adds four checks and two guards without touching the original file.
 
 ## 3. Quality

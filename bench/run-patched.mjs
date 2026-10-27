@@ -1,6 +1,6 @@
 // Runs a given rule engine over a given set and prints a compact summary.
 import { readFileSync } from 'node:fs'
-import { analyzeRules } from '../vendor/rules-patched-v2.mjs'
+import { analyzeRules } from '../vendor/rules-patched.mjs'
 
 const setPath = process.argv[2] || 'set.jsonl'
 const rows = readFileSync(new URL('./' + setPath, import.meta.url), 'utf8').trim().split('\n').map((l) => JSON.parse(l))
