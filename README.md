@@ -100,3 +100,21 @@ touches the network.
 ## Licence
 
 MIT.
+
+## What was built during the event
+
+Built during AI Yako (QVAC Hackathon, 27 October 2026): the 40-message and
+20-message labelled sets, the three benchmark runners, the patched rule
+wrapper, the report, the video and all of the measurement.
+
+## Existing code and third-party work
+
+The only reused application code is the deterministic rule engine from
+Scam Shield Offline (MIT), copied unmodified into `vendor/rules.mjs` together
+with its licence file. Everything else is a published library, not copied
+source:
+
+- `@qvac/sdk` 0.22.0 (Apache-2.0) for local inference, with the Llama 3.2 1B
+  Instruct Q4_0 weights served by the QVAC registry.
+- The hosted chat model used as the cloud baseline is reached through its
+  public HTTP API and is not redistributed here.
