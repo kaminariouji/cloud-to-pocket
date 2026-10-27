@@ -1,0 +1,468 @@
+{
+ "summary": {
+  "system": "device (rule engine, no model call)",
+  "n": 40,
+  "correct": 33,
+  "accuracy": 0.825,
+  "falsePositives": 2,
+  "falseNegatives": 5,
+  "ms_p50": 0.009,
+  "ms_p95": 0.689,
+  "ms_max": 2.418,
+  "peak_rss_mb": 63.8,
+  "network_bytes_per_message": 0,
+  "notes": [
+   {
+    "id": "l07",
+    "label": "legit",
+    "verdict": "scam",
+    "score": 26,
+    "topFlag": "Asks you to send money or pay a fee to unlock something"
+   },
+   {
+    "id": "l17",
+    "label": "legit",
+    "verdict": "scam",
+    "score": 54,
+    "topFlag": "Asks for a PIN, OTP, password or seed phrase"
+   },
+   {
+    "id": "s11",
+    "label": "scam",
+    "verdict": "legit",
+    "score": 0,
+    "topFlag": null
+   },
+   {
+    "id": "s12",
+    "label": "scam",
+    "verdict": "legit",
+    "score": 0,
+    "topFlag": null
+   },
+   {
+    "id": "s14",
+    "label": "scam",
+    "verdict": "legit",
+    "score": 24,
+    "topFlag": "Link lhdn-refund-my.click: low-reputation TLD .click, host has 2 hyphens"
+   },
+   {
+    "id": "s18",
+    "label": "scam",
+    "verdict": "legit",
+    "score": 12,
+    "topFlag": "Link grabfood-billing.top: low-reputation TLD .top"
+   },
+   {
+    "id": "s19",
+    "label": "scam",
+    "verdict": "legit",
+    "score": 0,
+    "topFlag": null
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "s01",
+   "label": "scam",
+   "family": "otp",
+   "verdict": "scam",
+   "score": 38,
+   "band": "caution",
+   "ms": 2.4181,
+   "topFlag": "Creates artificial urgency or a deadline"
+  },
+  {
+   "id": "s02",
+   "label": "scam",
+   "family": "prize_fee",
+   "verdict": "scam",
+   "score": 78,
+   "band": "high",
+   "ms": 0.6888,
+   "topFlag": "Claims you won or were selected for something you never applied to"
+  },
+  {
+   "id": "s03",
+   "label": "scam",
+   "family": "delivery",
+   "verdict": "scam",
+   "score": 38,
+   "band": "caution",
+   "ms": 0.0683,
+   "topFlag": "Asks you to send money or pay a fee to unlock something"
+  },
+  {
+   "id": "s04",
+   "label": "scam",
+   "family": "job",
+   "verdict": "scam",
+   "score": 26,
+   "band": "caution",
+   "ms": 0.0556,
+   "topFlag": "Asks you to send money or pay a fee to unlock something"
+  },
+  {
+   "id": "s05",
+   "label": "scam",
+   "family": "investment",
+   "verdict": "scam",
+   "score": 38,
+   "band": "caution",
+   "ms": 0.0707,
+   "topFlag": "Asks you to send money or pay a fee to unlock something"
+  },
+  {
+   "id": "s06",
+   "label": "scam",
+   "family": "impersonation",
+   "verdict": "scam",
+   "score": 42,
+   "band": "caution",
+   "ms": 0.0371,
+   "topFlag": "Impersonates a bank, telco, courier or government office"
+  },
+  {
+   "id": "s07",
+   "label": "scam",
+   "family": "extortion",
+   "verdict": "scam",
+   "score": 40,
+   "band": "caution",
+   "ms": 0.0122,
+   "topFlag": "Creates artificial urgency or a deadline"
+  },
+  {
+   "id": "s08",
+   "label": "scam",
+   "family": "credentials",
+   "verdict": "scam",
+   "score": 48,
+   "band": "caution",
+   "ms": 0.0082,
+   "topFlag": "Asks for a PIN, OTP, password or seed phrase"
+  },
+  {
+   "id": "s09",
+   "label": "scam",
+   "family": "refund",
+   "verdict": "scam",
+   "score": 64,
+   "band": "high",
+   "ms": 0.0252,
+   "topFlag": "Asks for a PIN, OTP, password or seed phrase"
+  },
+  {
+   "id": "s10",
+   "label": "scam",
+   "family": "suspension",
+   "verdict": "scam",
+   "score": 26,
+   "band": "caution",
+   "ms": 0.0214,
+   "topFlag": "Creates artificial urgency or a deadline"
+  },
+  {
+   "id": "s11",
+   "label": "scam",
+   "family": "family",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0079,
+   "topFlag": null
+  },
+  {
+   "id": "s12",
+   "label": "scam",
+   "family": "loan",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0088,
+   "topFlag": null
+  },
+  {
+   "id": "s13",
+   "label": "scam",
+   "family": "crypto",
+   "verdict": "scam",
+   "score": 38,
+   "band": "caution",
+   "ms": 0.0212,
+   "topFlag": "Asks you to send money or pay a fee to unlock something"
+  },
+  {
+   "id": "s14",
+   "label": "scam",
+   "family": "gov",
+   "verdict": "legit",
+   "score": 24,
+   "band": "low",
+   "ms": 0.0213,
+   "topFlag": "Link lhdn-refund-my.click: low-reputation TLD .click, host has 2 hyphens"
+  },
+  {
+   "id": "s15",
+   "label": "scam",
+   "family": "prize_fee",
+   "verdict": "scam",
+   "score": 46,
+   "band": "caution",
+   "ms": 0.0204,
+   "topFlag": "Claims you won or were selected for something you never applied to"
+  },
+  {
+   "id": "s16",
+   "label": "scam",
+   "family": "bank",
+   "verdict": "scam",
+   "score": 54,
+   "band": "caution",
+   "ms": 0.0096,
+   "topFlag": "Asks for a PIN, OTP, password or seed phrase"
+  },
+  {
+   "id": "s17",
+   "label": "scam",
+   "family": "job",
+   "verdict": "scam",
+   "score": 26,
+   "band": "caution",
+   "ms": 0.0084,
+   "topFlag": "Asks you to send money or pay a fee to unlock something"
+  },
+  {
+   "id": "s18",
+   "label": "scam",
+   "family": "delivery",
+   "verdict": "legit",
+   "score": 12,
+   "band": "low",
+   "ms": 0.0332,
+   "topFlag": "Link grabfood-billing.top: low-reputation TLD .top"
+  },
+  {
+   "id": "s19",
+   "label": "scam",
+   "family": "extortion",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0088,
+   "topFlag": null
+  },
+  {
+   "id": "s20",
+   "label": "scam",
+   "family": "investment",
+   "verdict": "scam",
+   "score": 50,
+   "band": "caution",
+   "ms": 0.0411,
+   "topFlag": "Asks you to send money or pay a fee to unlock something"
+  },
+  {
+   "id": "l01",
+   "label": "legit",
+   "family": "bank_alert",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0089,
+   "topFlag": null
+  },
+  {
+   "id": "l02",
+   "label": "legit",
+   "family": "delivery",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0065,
+   "topFlag": null
+  },
+  {
+   "id": "l03",
+   "label": "legit",
+   "family": "otp",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0075,
+   "topFlag": null
+  },
+  {
+   "id": "l04",
+   "label": "legit",
+   "family": "appointment",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0074,
+   "topFlag": null
+  },
+  {
+   "id": "l05",
+   "label": "legit",
+   "family": "invoice",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0105,
+   "topFlag": null
+  },
+  {
+   "id": "l06",
+   "label": "legit",
+   "family": "family",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0063,
+   "topFlag": null
+  },
+  {
+   "id": "l07",
+   "label": "legit",
+   "family": "bank_alert",
+   "verdict": "scam",
+   "score": 26,
+   "band": "caution",
+   "ms": 0.0079,
+   "topFlag": "Asks you to send money or pay a fee to unlock something"
+  },
+  {
+   "id": "l08",
+   "label": "legit",
+   "family": "delivery",
+   "verdict": "legit",
+   "score": 18,
+   "band": "low",
+   "ms": 0.0073,
+   "topFlag": "Impersonates a bank, telco, courier or government office"
+  },
+  {
+   "id": "l09",
+   "label": "legit",
+   "family": "work",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0125,
+   "topFlag": null
+  },
+  {
+   "id": "l10",
+   "label": "legit",
+   "family": "promo",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0091,
+   "topFlag": null
+  },
+  {
+   "id": "l11",
+   "label": "legit",
+   "family": "security",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0118,
+   "topFlag": null
+  },
+  {
+   "id": "l12",
+   "label": "legit",
+   "family": "invoice",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0084,
+   "topFlag": null
+  },
+  {
+   "id": "l13",
+   "label": "legit",
+   "family": "appointment",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0078,
+   "topFlag": null
+  },
+  {
+   "id": "l14",
+   "label": "legit",
+   "family": "work",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0074,
+   "topFlag": null
+  },
+  {
+   "id": "l15",
+   "label": "legit",
+   "family": "bank_alert",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0125,
+   "topFlag": null
+  },
+  {
+   "id": "l16",
+   "label": "legit",
+   "family": "promo",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0083,
+   "topFlag": null
+  },
+  {
+   "id": "l17",
+   "label": "legit",
+   "family": "security",
+   "verdict": "scam",
+   "score": 54,
+   "band": "caution",
+   "ms": 0.0087,
+   "topFlag": "Asks for a PIN, OTP, password or seed phrase"
+  },
+  {
+   "id": "l18",
+   "label": "legit",
+   "family": "family",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0063,
+   "topFlag": null
+  },
+  {
+   "id": "l19",
+   "label": "legit",
+   "family": "work",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0079,
+   "topFlag": null
+  },
+  {
+   "id": "l20",
+   "label": "legit",
+   "family": "delivery",
+   "verdict": "legit",
+   "score": 0,
+   "band": "low",
+   "ms": 0.0077,
+   "topFlag": null
+  }
+ ]
+}

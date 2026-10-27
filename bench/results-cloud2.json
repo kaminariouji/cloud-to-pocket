@@ -1,0 +1,335 @@
+{
+ "summary": {
+  "system": "cloud (agnes-3.0-flash)",
+  "n": 20,
+  "answered": 20,
+  "unanswered": 0,
+  "rateLimited": 3,
+  "correct": 18,
+  "accuracy_on_answered": 0.9,
+  "accuracy_all": 0.9,
+  "ms_p50": 3259,
+  "ms_p95": 14279,
+  "ms_max": 14279,
+  "peak_rss_mb": 81.4,
+  "total_tokens": 2979,
+  "tokens_per_message": 148.9,
+  "request_bytes_per_message": 374,
+  "falsePositives": 2,
+  "falseNegatives": 0,
+  "notes": [
+   {
+    "id": "h13",
+    "label": "legit",
+    "verdict": "scam"
+   },
+   {
+    "id": "h19",
+    "label": "legit",
+    "verdict": "scam"
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "h01",
+   "label": "scam",
+   "family": "otp",
+   "verdict": "scam",
+   "ms": 911.963,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 400,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 145,
+    "total_tokens": 153
+   }
+  },
+  {
+   "id": "h02",
+   "label": "scam",
+   "family": "prize_fee",
+   "verdict": "scam",
+   "ms": 550.9201,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 365,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 142,
+    "total_tokens": 150
+   }
+  },
+  {
+   "id": "h03",
+   "label": "scam",
+   "family": "delivery",
+   "verdict": "scam",
+   "ms": 1739.1628,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 372,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 139,
+    "total_tokens": 147
+   }
+  },
+  {
+   "id": "h04",
+   "label": "scam",
+   "family": "job",
+   "verdict": "scam",
+   "ms": 10336.4743,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 392,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 144,
+    "total_tokens": 152
+   }
+  },
+  {
+   "id": "h05",
+   "label": "scam",
+   "family": "investment",
+   "verdict": "scam",
+   "ms": 4489.9692,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 381,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 141,
+    "total_tokens": 149
+   }
+  },
+  {
+   "id": "h06",
+   "label": "scam",
+   "family": "impersonation",
+   "verdict": "scam",
+   "ms": 3258.7452,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 396,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 139,
+    "total_tokens": 147
+   }
+  },
+  {
+   "id": "h07",
+   "label": "scam",
+   "family": "extortion",
+   "verdict": "scam",
+   "ms": 1390.7112,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 372,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 138,
+    "total_tokens": 146
+   }
+  },
+  {
+   "id": "h08",
+   "label": "scam",
+   "family": "credentials",
+   "verdict": "scam",
+   "ms": 519.8353,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 362,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 129,
+    "total_tokens": 137
+   }
+  },
+  {
+   "id": "h09",
+   "label": "scam",
+   "family": "refund",
+   "verdict": "scam",
+   "ms": 4528.1666,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 368,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 136,
+    "total_tokens": 144
+   }
+  },
+  {
+   "id": "h10",
+   "label": "scam",
+   "family": "gov",
+   "verdict": "scam",
+   "ms": 3771.6669,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 367,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 147,
+    "total_tokens": 155
+   }
+  },
+  {
+   "id": "h11",
+   "label": "legit",
+   "family": "bank_alert",
+   "verdict": "legit",
+   "ms": 14279.0568,
+   "status": 200,
+   "attempts": 4,
+   "request_bytes": 374,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 162,
+    "total_tokens": 170
+   }
+  },
+  {
+   "id": "h12",
+   "label": "legit",
+   "family": "delivery",
+   "verdict": "legit",
+   "ms": 1159.1938,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 336,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 132,
+    "total_tokens": 140
+   }
+  },
+  {
+   "id": "h13",
+   "label": "legit",
+   "family": "otp",
+   "verdict": "scam",
+   "ms": 7119.7781,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 389,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 143,
+    "total_tokens": 151
+   }
+  },
+  {
+   "id": "h14",
+   "label": "legit",
+   "family": "appointment",
+   "verdict": "legit",
+   "ms": 1022.7919,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 381,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 141,
+    "total_tokens": 149
+   }
+  },
+  {
+   "id": "h15",
+   "label": "legit",
+   "family": "invoice",
+   "verdict": "legit",
+   "ms": 4833.3767,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 395,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 148,
+    "total_tokens": 156
+   }
+  },
+  {
+   "id": "h16",
+   "label": "legit",
+   "family": "family",
+   "verdict": "legit",
+   "ms": 13014.7988,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 358,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 135,
+    "total_tokens": 143
+   }
+  },
+  {
+   "id": "h17",
+   "label": "legit",
+   "family": "work",
+   "verdict": "legit",
+   "ms": 3235.1427,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 354,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 127,
+    "total_tokens": 135
+   }
+  },
+  {
+   "id": "h18",
+   "label": "legit",
+   "family": "promo",
+   "verdict": "legit",
+   "ms": 4631.7633,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 351,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 137,
+    "total_tokens": 145
+   }
+  },
+  {
+   "id": "h19",
+   "label": "legit",
+   "family": "security",
+   "verdict": "scam",
+   "ms": 800.6893,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 373,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 143,
+    "total_tokens": 151
+   }
+  },
+  {
+   "id": "h20",
+   "label": "legit",
+   "family": "delivery",
+   "verdict": "legit",
+   "ms": 1287.3531,
+   "status": 200,
+   "attempts": 1,
+   "request_bytes": 397,
+   "usage": {
+    "completion_tokens": 8,
+    "prompt_tokens": 151,
+    "total_tokens": 159
+   }
+  }
+ ]
+}

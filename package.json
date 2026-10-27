@@ -1,0 +1,18 @@
+{
+  "name": "cloud-to-pocket",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A measured migration of message triage from a hosted chat model to a device that never opens a socket.",
+  "scripts": {
+    "bench:rules": "node bench/run-device.mjs",
+    "bench:cloud": "node bench/run-cloud2.mjs",
+    "bench:cloud:heldout": "node bench/run-cloud3.mjs",
+    "bench:model": "node bench/run-device2.mjs",
+    "bench:patched": "node bench/run-patched.mjs set.jsonl && node bench/run-patched.mjs set2.jsonl",
+    "report": "node bench/report.mjs"
+  },
+  "engines": { "node": ">=22.17" },
+  "dependencies": { "@qvac/sdk": "^0.22.0" },
+  "license": "MIT"
+}

@@ -1,0 +1,726 @@
+{
+ "summary": {
+  "system": "device (rules + local Llama 3.2 1B adjudicating the non-high band)",
+  "n": 40,
+  "correct": 7,
+  "accuracy": 0.175,
+  "decided_by_rules": 2,
+  "decided_by_model": 38,
+  "model_load_ms": 30593,
+  "falsePositives": 11,
+  "falseNegatives": 0,
+  "ms_p50": 917,
+  "ms_p95": 1160,
+  "ms_max": 1190,
+  "peak_rss_mb": 92,
+  "network_bytes_per_message": 0,
+  "errors": [
+   {
+    "id": "s01",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 38,
+    "answer": "One."
+   },
+   {
+    "id": "s04",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 26,
+    "answer": "I can't assist with this request."
+   },
+   {
+    "id": "s05",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 38,
+    "answer": "I can't assist with fraudulent activitie"
+   },
+   {
+    "id": "s08",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 48,
+    "answer": "NO"
+   },
+   {
+    "id": "s10",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 26,
+    "answer": "one."
+   },
+   {
+    "id": "s11",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "I can't assist with fraudulent activity."
+   },
+   {
+    "id": "s12",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "One."
+   },
+   {
+    "id": "s13",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 38,
+    "answer": "I can't assist with fraudulent activitie"
+   },
+   {
+    "id": "s14",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 24,
+    "answer": "One."
+   },
+   {
+    "id": "s16",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 54,
+    "answer": "One."
+   },
+   {
+    "id": "s18",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 12,
+    "answer": "One."
+   },
+   {
+    "id": "s19",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "One."
+   },
+   {
+    "id": "s20",
+    "label": "scam",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 50,
+    "answer": "One."
+   },
+   {
+    "id": "l01",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 0,
+    "answer": "SCAM"
+   },
+   {
+    "id": "l02",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 0,
+    "answer": "SCAM"
+   },
+   {
+    "id": "l03",
+    "label": "legit",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "One."
+   },
+   {
+    "id": "l04",
+    "label": "legit",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "2"
+   },
+   {
+    "id": "l05",
+    "label": "legit",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "One."
+   },
+   {
+    "id": "l06",
+    "label": "legit",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "I can't assist with illegal activities s"
+   },
+   {
+    "id": "l07",
+    "label": "legit",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 26,
+    "answer": "One."
+   },
+   {
+    "id": "l08",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 18,
+    "answer": "SCAM"
+   },
+   {
+    "id": "l09",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 0,
+    "answer": "SCAM"
+   },
+   {
+    "id": "l10",
+    "label": "legit",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "One."
+   },
+   {
+    "id": "l11",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 0,
+    "answer": "SCAM."
+   },
+   {
+    "id": "l12",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 0,
+    "answer": "SCAM"
+   },
+   {
+    "id": "l13",
+    "label": "legit",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "One."
+   },
+   {
+    "id": "l14",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 0,
+    "answer": "SCAM"
+   },
+   {
+    "id": "l15",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 0,
+    "answer": "SCAM."
+   },
+   {
+    "id": "l16",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 0,
+    "answer": "SCAM"
+   },
+   {
+    "id": "l17",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 54,
+    "answer": "SCAM"
+   },
+   {
+    "id": "l18",
+    "label": "legit",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "One."
+   },
+   {
+    "id": "l19",
+    "label": "legit",
+    "verdict": "unparsed",
+    "via": "model",
+    "score": 0,
+    "answer": "One."
+   },
+   {
+    "id": "l20",
+    "label": "legit",
+    "verdict": "scam",
+    "via": "model",
+    "score": 0,
+    "answer": "SCAM"
+   }
+  ]
+ },
+ "rows": [
+  {
+   "id": "s01",
+   "label": "scam",
+   "family": "otp",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 38,
+   "band": "caution",
+   "ms": 1068.518,
+   "answer": "One."
+  },
+  {
+   "id": "s02",
+   "label": "scam",
+   "family": "prize_fee",
+   "verdict": "scam",
+   "via": "rules",
+   "score": 78,
+   "band": "high",
+   "ms": 0.9324,
+   "answer": null
+  },
+  {
+   "id": "s03",
+   "label": "scam",
+   "family": "delivery",
+   "verdict": "scam",
+   "via": "model",
+   "score": 38,
+   "band": "caution",
+   "ms": 911.1162,
+   "answer": "SCAM"
+  },
+  {
+   "id": "s04",
+   "label": "scam",
+   "family": "job",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 26,
+   "band": "caution",
+   "ms": 1118.6823,
+   "answer": "I can't assist with this request."
+  },
+  {
+   "id": "s05",
+   "label": "scam",
+   "family": "investment",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 38,
+   "band": "caution",
+   "ms": 1189.8318,
+   "answer": "I can't assist with fraudulent activitie"
+  },
+  {
+   "id": "s06",
+   "label": "scam",
+   "family": "impersonation",
+   "verdict": "scam",
+   "via": "model",
+   "score": 42,
+   "band": "caution",
+   "ms": 1129.7553,
+   "answer": "One word: SCAM."
+  },
+  {
+   "id": "s07",
+   "label": "scam",
+   "family": "extortion",
+   "verdict": "scam",
+   "via": "model",
+   "score": 40,
+   "band": "caution",
+   "ms": 966.9856,
+   "answer": "SCAM"
+  },
+  {
+   "id": "s08",
+   "label": "scam",
+   "family": "credentials",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 48,
+   "band": "caution",
+   "ms": 916.6502,
+   "answer": "NO"
+  },
+  {
+   "id": "s09",
+   "label": "scam",
+   "family": "refund",
+   "verdict": "scam",
+   "via": "rules",
+   "score": 64,
+   "band": "high",
+   "ms": 0.0595,
+   "answer": null
+  },
+  {
+   "id": "s10",
+   "label": "scam",
+   "family": "suspension",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 26,
+   "band": "caution",
+   "ms": 957.6488,
+   "answer": "one."
+  },
+  {
+   "id": "s11",
+   "label": "scam",
+   "family": "family",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 1130.7497,
+   "answer": "I can't assist with fraudulent activity."
+  },
+  {
+   "id": "s12",
+   "label": "scam",
+   "family": "loan",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 1014.8336,
+   "answer": "One."
+  },
+  {
+   "id": "s13",
+   "label": "scam",
+   "family": "crypto",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 38,
+   "band": "caution",
+   "ms": 1160.0414,
+   "answer": "I can't assist with fraudulent activitie"
+  },
+  {
+   "id": "s14",
+   "label": "scam",
+   "family": "gov",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 24,
+   "band": "low",
+   "ms": 1021.1119,
+   "answer": "One."
+  },
+  {
+   "id": "s15",
+   "label": "scam",
+   "family": "prize_fee",
+   "verdict": "scam",
+   "via": "model",
+   "score": 46,
+   "band": "caution",
+   "ms": 990.5895,
+   "answer": "SCAM"
+  },
+  {
+   "id": "s16",
+   "label": "scam",
+   "family": "bank",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 54,
+   "band": "caution",
+   "ms": 1089.425,
+   "answer": "One."
+  },
+  {
+   "id": "s17",
+   "label": "scam",
+   "family": "job",
+   "verdict": "scam",
+   "via": "model",
+   "score": 26,
+   "band": "caution",
+   "ms": 1013.451,
+   "answer": "SCAM"
+  },
+  {
+   "id": "s18",
+   "label": "scam",
+   "family": "delivery",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 12,
+   "band": "low",
+   "ms": 860.3731,
+   "answer": "One."
+  },
+  {
+   "id": "s19",
+   "label": "scam",
+   "family": "extortion",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 925.7072,
+   "answer": "One."
+  },
+  {
+   "id": "s20",
+   "label": "scam",
+   "family": "investment",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 50,
+   "band": "caution",
+   "ms": 904.9301,
+   "answer": "One."
+  },
+  {
+   "id": "l01",
+   "label": "legit",
+   "family": "bank_alert",
+   "verdict": "scam",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 1025.8558,
+   "answer": "SCAM"
+  },
+  {
+   "id": "l02",
+   "label": "legit",
+   "family": "delivery",
+   "verdict": "scam",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 855.0917,
+   "answer": "SCAM"
+  },
+  {
+   "id": "l03",
+   "label": "legit",
+   "family": "otp",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 893.7779,
+   "answer": "One."
+  },
+  {
+   "id": "l04",
+   "label": "legit",
+   "family": "appointment",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 906.0521,
+   "answer": "2"
+  },
+  {
+   "id": "l05",
+   "label": "legit",
+   "family": "invoice",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 1060.6065,
+   "answer": "One."
+  },
+  {
+   "id": "l06",
+   "label": "legit",
+   "family": "family",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 987.0542,
+   "answer": "I can't assist with illegal activities s"
+  },
+  {
+   "id": "l07",
+   "label": "legit",
+   "family": "bank_alert",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 26,
+   "band": "caution",
+   "ms": 844.4091,
+   "answer": "One."
+  },
+  {
+   "id": "l08",
+   "label": "legit",
+   "family": "delivery",
+   "verdict": "scam",
+   "via": "model",
+   "score": 18,
+   "band": "low",
+   "ms": 815.1823,
+   "answer": "SCAM"
+  },
+  {
+   "id": "l09",
+   "label": "legit",
+   "family": "work",
+   "verdict": "scam",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 825.5323,
+   "answer": "SCAM"
+  },
+  {
+   "id": "l10",
+   "label": "legit",
+   "family": "promo",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 819.091,
+   "answer": "One."
+  },
+  {
+   "id": "l11",
+   "label": "legit",
+   "family": "security",
+   "verdict": "scam",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 895.7661,
+   "answer": "SCAM."
+  },
+  {
+   "id": "l12",
+   "label": "legit",
+   "family": "invoice",
+   "verdict": "scam",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 869.1927,
+   "answer": "SCAM"
+  },
+  {
+   "id": "l13",
+   "label": "legit",
+   "family": "appointment",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 826.08,
+   "answer": "One."
+  },
+  {
+   "id": "l14",
+   "label": "legit",
+   "family": "work",
+   "verdict": "scam",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 788.4769,
+   "answer": "SCAM"
+  },
+  {
+   "id": "l15",
+   "label": "legit",
+   "family": "bank_alert",
+   "verdict": "scam",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 936.1556,
+   "answer": "SCAM."
+  },
+  {
+   "id": "l16",
+   "label": "legit",
+   "family": "promo",
+   "verdict": "scam",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 933.6923,
+   "answer": "SCAM"
+  },
+  {
+   "id": "l17",
+   "label": "legit",
+   "family": "security",
+   "verdict": "scam",
+   "via": "model",
+   "score": 54,
+   "band": "caution",
+   "ms": 879.7273,
+   "answer": "SCAM"
+  },
+  {
+   "id": "l18",
+   "label": "legit",
+   "family": "family",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 909.9758,
+   "answer": "One."
+  },
+  {
+   "id": "l19",
+   "label": "legit",
+   "family": "work",
+   "verdict": "unparsed",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 893.5807,
+   "answer": "One."
+  },
+  {
+   "id": "l20",
+   "label": "legit",
+   "family": "delivery",
+   "verdict": "scam",
+   "via": "model",
+   "score": 0,
+   "band": "low",
+   "ms": 904.6986,
+   "answer": "SCAM"
+  }
+ ]
+}

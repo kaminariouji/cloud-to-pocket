@@ -1,0 +1,20 @@
+{"id":"h01","label":"scam","family":"otp","text":"Your CIMB Clicks account has been locked after 3 failed attempts. Reopen it at http://cimb-clicks-verify.xyz and enter the OTP we just sent you."}
+{"id":"h02","label":"scam","family":"prize_fee","text":"Tahniah! Anda terpilih memenangi RM 5,000. Bayar yuran pemprosesan RM 80 untuk menuntut hadiah anda hari ini."}
+{"id":"h03","label":"scam","family":"delivery","text":"J&T Express: parcel held. A storage fee of RM 12 is required before release. Pay at http://jnt-storage-fee.click/pay"}
+{"id":"h04","label":"scam","family":"job","text":"Earn RM 400 a day liking videos on TikTok. Start with a RM 30 activation deposit, refunded with your first payout. Telegram @easyearn_my"}
+{"id":"h05","label":"scam","family":"investment","text":"Our fund returns 8% weekly, capital guaranteed. Minimum RM 1,000. Withdraw anytime. Register at http://secure-growth-fund.top"}
+{"id":"h06","label":"scam","family":"impersonation","text":"Shopee Support: your account is restricted. Verify your identity and card details at http://shopee-my-verify.online to lift the restriction."}
+{"id":"h07","label":"scam","family":"extortion","text":"I have your chat history and photos. Transfer RM 3,000 to this account within 24 hours or I will publish everything."}
+{"id":"h08","label":"scam","family":"credentials","text":"For security, please confirm your internet banking username, password and TAC by replying to this message."}
+{"id":"h09","label":"scam","family":"refund","text":"Your refund of RM 89 is pending. Complete it by entering your card number and CVV at http://refund-centre-my.xyz"}
+{"id":"h10","label":"scam","family":"gov","text":"Your EPF withdrawal has been approved. Pay the RM 150 release fee to expedite the transfer. Call 011-3344 5566."}
+{"id":"h11","label":"legit","family":"bank_alert","text":"CIMB: RM 250.00 was transferred from your account ending 3391 to AHMAD BIN ALI on 26 Oct. Not you? Call 1-300-88-0808."}
+{"id":"h12","label":"legit","family":"delivery","text":"J&T Express: your parcel JT8823411 has been delivered and signed for. Thank you."}
+{"id":"h13","label":"legit","family":"otp","text":"Your verification code is 771204. It expires in 5 minutes. Never share this code, not even with someone claiming to be from the bank."}
+{"id":"h14","label":"legit","family":"appointment","text":"Your appointment with Dr. Lim is confirmed for 6 November at 2:15pm at Sunway Medical Centre. Please arrive 15 minutes early."}
+{"id":"h15","label":"legit","family":"invoice","text":"Please find attached invoice 2026-118 for RM 980 for the September design work. Payment terms are 30 days. Bank details are on the invoice."}
+{"id":"h16","label":"legit","family":"family","text":"Abang, I'm at the station already. Can you pick me up at the main entrance? I'm wearing a blue jacket."}
+{"id":"h17","label":"legit","family":"work","text":"The client approved the proposal. Can you start on Monday and send the kickoff notes by Wednesday?"}
+{"id":"h18","label":"legit","family":"promo","text":"Last chance: 15% off all items this weekend with code RAYA15. Minimum spend RM 80. Terms apply."}
+{"id":"h19","label":"legit","family":"security","text":"Your Touch 'n Go eWallet password was updated on 27 October at 09:14. If this wasn't you, contact support in the app."}
+{"id":"h20","label":"legit","family":"delivery","text":"Boarding pass: your flight MH 1148 to Kota Kinabalu departs 08:20 tomorrow from KLIA Terminal 1. Check-in closes 60 minutes before departure."}
