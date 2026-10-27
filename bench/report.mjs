@@ -5,6 +5,7 @@ const R = (p) => JSON.parse(readFileSync(new URL('../results/' + p, import.meta.
 const pct = (a, b) => ((a / b) * 100).toFixed(1) + '%'
 
 function line (name, s) {
+  const answered = s.answered === undefined ? s.n : s.answered
   console.log(
     name.padEnd(34),
     'n=' + String(s.n).padEnd(3),
@@ -16,6 +17,15 @@ function line (name, s) {
     'rss=' + (s.peak_rss_mb + 'MB').padEnd(8),
     'net=' + (s.network_bytes_per_message !== undefined ? s.network_bytes_per_message : s.request_bytes_per_message) + 'B'
   )
+  // A row with unanswered requests has two honest accuracies. The README quotes
+  // the one over answered messages and says so; print it here as well, or the
+  // table that "recomputes every number in the README" would disagree with it.
+  if (answered < s.n) {
+    console.log(
+      ' '.repeat(35) + 'answered ' + answered + '/' + s.n + ', ' + s.correct + ' correct -> ' +
+      pct(s.correct, answered) + ' of answered, ' + pct(s.correct, s.n) + ' of all'
+    )
+  }
 }
 
 const files = [
