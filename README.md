@@ -62,7 +62,7 @@ npm install                 # @qvac/sdk for the device-model arm
 npm run bench:rules         # device-rules arm, no model, ~0.1 s
 npm run bench:cloud         # cloud arm, needs AGNES_API_KEY in the environment
 npm run bench:model         # device-model arm, downloads a 1B model once
-node bench/report.mjs       # prints the tables above from the three JSON files
+node bench/report.mjs       # prints the tables above from the files in results/
 ```
 
 The cloud arm reads `AGNES_API_KEY` from the environment. Nothing else in the repository
